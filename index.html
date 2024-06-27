@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- vue -->
-    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <script src="https://unpkg.com/vue@3"></script>
 </head>
 
-<body id="app">
-    <div class="container">
-        <ul v-if="email-generate" >
-           <li>
-                {{email-generate}}
-           </li>
+<body>
+    <div id="app" class="container">
+        <ul v-if="mailList">
+            <li>{{ mailList }}</li>
         </ul>
     </div>
 
 
-    <script src="./js/script.js"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
