@@ -16,7 +16,7 @@
 
 <body>
     <div id="app" class="container">
-        <ol v-if="mailList.lenght = 10">
+        <ol v-if="mailList.length === 10">
             <li v-for="email in mailList" :key="email">{{ email }}</li>
         </ol>
     </div>
