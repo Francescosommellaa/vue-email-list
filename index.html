@@ -17,7 +17,7 @@
 <body>
     <div id="app" class="container">
         <ul v-if="mailList">
-            <li>{{ mailList }}</li>
+            <li v-for="email in mailList" :key="email">{{ email }}</li>
         </ul>
     </div>
 
